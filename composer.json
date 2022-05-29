@@ -1,0 +1,31 @@
+{
+    "name": "tauseedzaman/laravel-ip-location-block",
+    "description": "a simple package for blocking ips from your laravel application",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+      {
+        "name": "tauseedzaman",
+        "email": "tauseedzaman@pm.me",
+        "role": "Developer"
+      }
+    ],
+    "support": {
+      "issues": "https://github.com/tauseedzaman/laravel-ip-location-block/issues"
+    },
+    "require": {
+      "php": "^7.4 || ^8.0",
+      "laravel/framework": "^8.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+      "classmap": [
+        "src/"
+      ],
+      "psr-4": {
+        "App\\": "app/",
+        "tauseedzaman\\laravel-ip-location-block\\": "packages/tauseedzaman/laravel-ip-location-block/src/"
+    }
+    }
+  }
+
