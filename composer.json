@@ -26,12 +26,12 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "tauseedzaman\\laravel-ip-location-block\\": "packages/tauseedzaman/laravel-ip-location-block/"
+            "tauseedzaman\\LaravelIpLocationBlock\\": "packages/tauseedzaman/laravel-ip-location-block/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "tauseedzaman\\laravel-ip-location-block\\Tests\\": "tests"
+            "tauseedzaman\\LaravelIpLocationBlock\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "tauseedzaman\\laravel-ip-location-block\\LaravelIpLocationBlockServiceProvider"
+                "tauseedzaman\\LaravelIpLocationBlock\\LaravelIpLocationBlockServiceProvider"
             ]
         }
     },
