@@ -1,5 +1,5 @@
 {
-    "name": "tauseedzaman/LaravelIpLocationBlock",
+    "name": "tauseedzaman/laravel-ip-location-block",
     "description": "a simple package for blocking ips from your laravel application",
     "license": "MIT",
     "keywords": [
