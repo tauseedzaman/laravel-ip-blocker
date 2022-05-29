@@ -15,7 +15,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
     public function register()
     {
         // $this->app->make('wisdmLabs\todolist\TodolistController');
-        $this->app->make('tauseedzaman\laravel-ip-location-block\RestrictedIpsController');
+        $this->app->make('tauseedzaman\LaravelIpLocationBlock\RestrictedIpsController');
     }
 
     /**
@@ -29,7 +29,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__.'/migrations');
 
-        $this->loadViewsFrom(__DIR__ . '/views', 'laravel-ip-location-block');
+        $this->loadViewsFrom(__DIR__ . '/views', 'LaravelIpLocationBlock');
 
         /** \Illuminate\Routing\Router $router */
         $router = $this->app['router'];
