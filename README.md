@@ -6,5 +6,6 @@ black user by ip location in laravel
 You can install the package via composer:
 
 ```bash
-composer require tauseedzaman/laravel-ip-location-block
+composer require tauseedzaman/laravel-ip-location-block 
 ```
+## Leave a start if you like this 
