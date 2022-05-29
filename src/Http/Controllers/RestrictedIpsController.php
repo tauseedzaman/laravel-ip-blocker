@@ -1,7 +1,7 @@
 <?php
 
 
-namespace tauseedzaman\LaravelIpLocationBlock;
+namespace tauseedzaman\LaravelIpLocationBlock\Http\Controllers;
 
 use App\Models\RestrictedIps;
 use Illuminate\Http\Request;
