@@ -5,9 +5,9 @@
     "keywords": [
         "tauseedzaman",
         "laravel",
-        "laravel-ip-blocker"
+        "laravel-ip-location-block"
     ],
-    "homepage": "https://github.com/tauseedzaman/laravel-ip-blocker",
+    "homepage": "https://github.com/tauseedzaman/laravel-ip-location-block",
     "license": "MIT",
     "support": {
         "issues": "https://github.com/tauseedzaman/laravel-ip-location-block/issues"
@@ -46,11 +46,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tauseedzaman\\LaravelIpBlocker\\LaravelIpBlockerServiceProvider"
-            ],
-            "aliases": {
-                "LaravelIpBlocker": "Tauseedzaman\\LaravelIpBlocker\\Facades\\LaravelIpBlocker"
-            }
+                "tauseedzaman\\laravel-ip-location-block\\LaravelIpLocationBlockerServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
