@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "tauseedzaman\\LaravelIpLocationBlock\\Tests\\": "tests"
+            "tauseedzaman\\laravel-ip-location-block\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "tauseedzaman\\LaravelIpLocationBlock\\LaravelIpLocationBlockerServiceProvider"
+                "tauseedzaman\\laravel-ip-location-block\\LaravelIpLocationBlockServiceProvider"
             ]
         }
     },
