@@ -15,7 +15,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
     public function register()
     {
         // $this->app->make('wisdmLabs\todolist\TodolistController');
-        $this->app->make('tauseedzaman\LaravelIpLocationBloc\RestrictedIpsController');
+        $this->app->make('tauseedzaman\LaravelIpLocationBlock\RestrictedIpsController');
     }
 
     /**
