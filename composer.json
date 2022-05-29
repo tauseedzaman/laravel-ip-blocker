@@ -14,10 +14,7 @@
       "issues": "https://github.com/tauseedzaman/laravel-ip-location-block/issues"
     },
     "require": {
-      "php": "^7.4 || ^8.0",
-      "laravel/framework": "^8.0"
     },
-    // "minimum-stability": "dev",
     "autoload": {
       "classmap": [
         "src/"
