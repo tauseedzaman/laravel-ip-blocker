@@ -52,3 +52,4 @@ yourDoman.test/restricted-ips
 ```
 
 ## Leave a start if you like this
+# Thanks for using our service
