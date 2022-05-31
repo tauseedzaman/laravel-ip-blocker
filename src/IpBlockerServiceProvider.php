@@ -33,7 +33,7 @@ class IpBlockerServiceProvider extends ServiceProvider
 
         /** \Illuminate\Routing\Router $router */
         $router = $this->app['router'];
-        $router->pushMiddlewareToGroup('web', Middleware\IpBlocker::class);
+        $router->pushMiddlewareToGroup('web', Middleware\IpBlockerMiddleware::class);
 
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/'),
