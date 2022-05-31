@@ -27,7 +27,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
 
-        $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
 
         $this->loadViewsFrom(__DIR__ . '/views', 'LaravelIpLocationBlock');
 
@@ -37,7 +37,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/'),
+            __DIR__ . '/migrations' => base_path('database/migrations'),
         ]);
     }
-
 }

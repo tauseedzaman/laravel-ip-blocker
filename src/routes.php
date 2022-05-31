@@ -1,3 +1,3 @@
 <?php
 
-Route::resource('restricted-ips', RestrictedIpsController::class);
+Route::resource('restricted-ips', tauseedzaman\LaravelIpLocationBlock\RestrictedIpsController::class);
