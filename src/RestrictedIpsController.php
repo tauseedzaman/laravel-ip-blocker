@@ -2,8 +2,9 @@
 
 
 namespace tauseedzaman\LaravelIpLocationBlock;
+
 use App\Http\Controllers\Controller;
-use App\Models\RestrictedIps;
+use tauseedzaman\LaravelIpLocationBlock\RestrictedIps;
 use Illuminate\Http\Request;
 
 class RestrictedIpsController extends Controller
