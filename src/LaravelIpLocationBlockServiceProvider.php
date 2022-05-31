@@ -1,11 +1,11 @@
 <?php
 
-namespace tauseedzaman\LaravelIpLocationBlock;
+namespace tauseedzaman\LaravelIpBlocker;
 
 use GuzzleHttp\Middleware;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelIpLocationBlockServiceProvider extends ServiceProvider
+class IpBlockerServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -15,7 +15,7 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
     public function register()
     {
         // $this->app->make('wisdmLabs\todolist\TodolistController');
-        $this->app->make('tauseedzaman\LaravelIpLocationBlock\RestrictedIpsController');
+        $this->app->make('tauseedzaman\LaravelIpBlocker\IpBlockerController');
     }
 
     /**
@@ -29,11 +29,11 @@ class LaravelIpLocationBlockServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
 
-        $this->loadViewsFrom(__DIR__ . '/views', 'LaravelIpLocationBlock');
+        $this->loadViewsFrom(__DIR__ . '/views', 'LaravelIpBlocker');
 
         /** \Illuminate\Routing\Router $router */
         $router = $this->app['router'];
-        $router->pushMiddlewareToGroup('web', Middleware\RestrictIpLocationBlock::class);
+        $router->pushMiddlewareToGroup('web', Middleware\IpBlocker::class);
 
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/'),

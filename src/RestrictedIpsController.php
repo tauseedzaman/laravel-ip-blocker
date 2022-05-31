@@ -1,13 +1,13 @@
 <?php
 
 
-namespace tauseedzaman\LaravelIpLocationBlock;
+namespace tauseedzaman\LaravelIpBlocker;
 
 use App\Http\Controllers\Controller;
-use tauseedzaman\LaravelIpLocationBlock\RestrictedIps;
+use tauseedzaman\LaravelIpBlocker\RestrictedIps;
 use Illuminate\Http\Request;
 
-class RestrictedIpsController extends Controller
+class IpBlockerController extends Controller
 {
     /**
      * Display a listing of the resource.

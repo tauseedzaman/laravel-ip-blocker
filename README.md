@@ -14,7 +14,7 @@ Add New IP
 You can install the package via composer:
 
 ```
-composer require tauseedzaman/laravel-ip-location-block
+composer require tauseedzaman/laravel-ip-blocker
 ```
 
 ## Configuratoin
@@ -28,7 +28,7 @@ php artisan vendor:publish
 then look for
 
 ```
-tauseedzaman\LaravelIpLocationBlock\LaravelIpLocationBlockServiceProvider
+tauseedzaman\LaravelIpBlocker\IpBlockerServiceProvider
 ```
 
 and choose that number and hit enter
@@ -42,7 +42,7 @@ php artisan migrate
 Now add the following to App\Http\Kernel.php in the $middleware group at first position
 
 ```
-        \tauseedzaman\LaravelIpLocationBlock\Middleware\RestrictIpMiddleware::class
+        \tauseedzaman\LaravelIpBlocker\Middleware\IpBlockerMiddleware::class
 ```
 
 Now thats's set you can view the GUI in

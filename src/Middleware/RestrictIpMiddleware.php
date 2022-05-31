@@ -1,13 +1,13 @@
 <?php
 
-namespace tauseedzaman\LaravelIpLocationBlock\Middleware;
+namespace tauseedzaman\LaravelIpBlocker\Middleware;
 
-use tauseedzaman\LaravelIpLocationBlock\RestrictedIps;
+use tauseedzaman\LaravelIpBlocker\RestrictedIps;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class RestrictIpMiddleware
+class IpBlockerMiddleware
 {
     /**
      * Handle an incoming request.
