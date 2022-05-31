@@ -13,9 +13,6 @@
                     <label for="ip_address">{{ __('IP') }}</label>
                     <input type="text" class="form-control" id="ip_address" name="ip_address"
                         placeholder="{{ __('IP') }}">
-                    @error('ip_address')
-                        <div class="alert-danger bg-light">{{ $message }}</div>
-                    @enderror
                 </div>
                 <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
             </form>
