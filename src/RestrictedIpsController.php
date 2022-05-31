@@ -21,6 +21,11 @@ class RestrictedIpsController extends Controller
         ]);
     }
 
+    public function create()
+    {
+        return view("RestrictedIps.create");
+    }
+
     /**
      * Store a newly created resource in storage.
      *
