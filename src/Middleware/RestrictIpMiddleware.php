@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace tauseedzaman\LaravelIpLocationBlock\Middleware;
 
-use App\Models\RestrictedIps;
+use tauseedzaman\LaravelIpLocationBlock\RestrictedIps;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -18,7 +18,6 @@ class RestrictIpMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        // $restricted_ip = "Comma seperated IP address which is to be restricted";
         $ipsDeny = array_values(RestrictedIps::pluck("ip_address")->toArray()); //explode(',',preg_replace('/\s+/', '', $restricted_ip));
         if (count($ipsDeny)) {
             if (in_array(request()->ip(), $ipsDeny)) {
