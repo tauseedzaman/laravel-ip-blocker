@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col shadow rounded py-3 text-center">
-                <h2>{{ __("Restriced IP's") }}</h2>
+                <h2>{{ __("Restricted IP's") }}</h2>
             </div>
         </div>
     </div>
